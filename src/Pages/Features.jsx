@@ -1,5 +1,6 @@
 const Features = () => {
   return (
+    
 <div
   className="bg-[url('https://i.imgur.com/jAXaawT.jpg')] h-screen bg-cover bg-center flex justify-items-center items-center">
   <div className="px-10 lg:px-32 xl:px-40">
