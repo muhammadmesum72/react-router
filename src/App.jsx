@@ -1,18 +1,19 @@
 import Header from "./components/Header";
 import { Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import Features from "./Pages/Features";
-import Product from "./Pages/Product";
-import NotFound from "./Pages/NotFound";
-import Marketplace from "./Pages/Marketplace";
-import Company from "./Pages/Company";
-import Login from "./Pages/Login";
-import Dashboard from "./Pages/Dashboard";
-import Users from "./Pages/Users";
-import User from "./Pages/USer";
-import MainLayout from "./Layouts/Main";
-import DashboardLayout from "./Layouts/Dashboard";
-import Profile from "./Pages/Dashboard/Profile";
+import Home from "./pages/Main/Home";
+import Features from "./pages/Main/Features";
+import Product from "./pages/Main/Product";
+import NotFound from "./components/NotFound";
+import Marketplace from "./pages/Main/Marketplace";
+import Company from "./pages/Main/Company";
+import Login from "./pages/Main/Login";
+import Dashboard from "./pages/Main/Dashboard";
+import Users from "./pages/Users";
+import User from "./pages/USer";
+import MainLayout from "./layouts/Main";
+import DashboardLayout from "./layouts/Dashboard";
+import Profile from "./pages/Dashboard/Profile";
+import HomePage from "./pages/Homepage"
 
 const App = () => {
   return (
