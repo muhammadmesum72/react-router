@@ -1,23 +1,19 @@
+import { useContext } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { UserContext } from "../../context/UserContext";
 
 const Login = () => {
   const navigate = useNavigate();
   const parms = useParams();
-  
 
-
-  const user = true;
+  const { user, loggedIn, setLoggedIn } = useContext(UserContext);
 
   const login = () => {
-    console.log(parms)
+    setLoggedIn(true);
 
     // email and password macthes
-    if (user) {
-      navigate("/dashboard");
-    } else {
-      alert("Wrong password or email");
-      navigate("/")
-    }
+
+    navigate("/dashboard");
 
     // if wrong email or password
   };

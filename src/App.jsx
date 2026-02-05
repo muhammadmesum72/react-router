@@ -13,11 +13,12 @@ import User from "./pages/USer";
 import MainLayout from "./layouts/Main";
 import DashboardLayout from "./layouts/Dashboard";
 import Profile from "./pages/Dashboard/Profile";
-import HomePage from "./pages/Homepage"
+import HomePage from "./pages/Homepage";
+import UserProvider from "./context/UserProvider";
 
 const App = () => {
   return (
-    <div>
+    <UserProvider>
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
@@ -36,7 +37,7 @@ const App = () => {
           <Route path="users/:id" element={<User />} />
         </Route>
       </Routes>
-    </div>
+    </UserProvider>
   );
 };
 export default App;
